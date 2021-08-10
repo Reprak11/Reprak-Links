@@ -3,6 +3,7 @@ import logo from '../assets/logo-simple.PNG'
 
 import Info from '../components/Info'
 
+
 const Title = () => (
     <div className="title">
         <div className='logo-border'>

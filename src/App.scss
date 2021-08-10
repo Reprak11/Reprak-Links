@@ -24,13 +24,35 @@ body{
     }
     .info-background{
         background-color: rgba(0,0,0,0.7);
-        width: 40%;
-        padding: 1rem;
+        width: 50%;
+        padding: 1rem 2rem;
         .info-text{
             color:white;
-            font-size: 20px;
-
+            font-size: 22px;
+            text-align: center;
+            font-weight: 600;
         }
     }
     
+}
+
+.social-media{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    .media-card{
+        display: flex;
+        flex-direction: column;
+        .card-title{
+            color:white
+        }
+        .card-logo{
+            fill: white;
+            width: 10rem;
+            height: 10rem;
+        }
+        .card-button{
+
+        }
+    }
 }

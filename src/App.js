@@ -1,9 +1,13 @@
 import './App.css';
 import Title from './containers/Title'
+import SocialMedia from './containers/SocialMedia'
 
 function App() {
   return (
-    <Title />
+    <div>
+      <Title />
+      <SocialMedia />
+    </div>
   );
 }
 
