@@ -78,10 +78,6 @@ body{
             border:5px solid white;
         }
     }
-    .insLogo{
-        animation-name: test;
-        animation-duration: 5s;
-    }
         .insLogo:hover{
             background: #d6249f;
             background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
@@ -105,4 +101,88 @@ body{
             background-color: #6441A4;
             cursor: pointer;
         }
+}
+
+@media only screen and (min-width:768px){
+    
+    .title{
+        margin-top: 2rem;
+        height: 55vh;
+        .info-background{
+            width: 65%;
+        }
+    }
+    .social-media{
+        gap: 2rem;
+        padding-bottom: 3rem;
+        flex-wrap: wrap;
+        .insLogo{
+            background: #d6249f;
+            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+            cursor: pointer;
+        }
+        
+        .gitLogo{
+            background: linear-gradient(269.65deg, #6e5494 0%, #000 17%, #000000 79%, #4078c0 99%);
+            cursor: pointer;
+        }
+        .tikLogo{
+            background: rgb(105,201,208);
+            background: linear-gradient(139.03deg, #69c9d0 0%, #000 28%, #000 68%, #ee1d52 100%);
+            cursor: pointer;
+        }
+        .twitterLogo{
+            background-color: #00ACEE;
+            cursor: pointer;
+        }
+        .twitchLogo{
+            background-color: #6441A4;
+            cursor: pointer;
+        }
+    }
+    
+}
+
+@media only screen and (max-width:640px){
+    .title{
+        min-height: 100vh;
+        margin-top: 2rem;
+        .info-background{
+            width: 75%;
+        }
+    }
+    .social-media{
+        gap: 2rem;
+        padding-bottom: 3rem;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+        .insLogo{
+            background: #d6249f;
+            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+            cursor: pointer;
+        }
+        .gitLogo{
+            background: linear-gradient(269.65deg, #6e5494 0%, #000 17%, #000000 79%, #4078c0 99%);
+            cursor: pointer;
+        }
+        .tikLogo{
+            background: rgb(105,201,208);
+            background: linear-gradient(139.03deg, #69c9d0 0%, #000 28%, #000 68%, #ee1d52 100%);
+            cursor: pointer;
+        }
+        .twitterLogo{
+            background-color: #00ACEE;
+            cursor: pointer;
+        }
+        .twitchLogo{
+            background-color: #6441A4;
+            cursor: pointer;
+        }
+    }
+}
+@media only screen and (max-width:320px){
+    .title{
+        min-height: 140vh;
+    }
 }

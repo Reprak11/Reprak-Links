@@ -106,13 +106,6 @@ body {
   border: 5px solid white;
 }
 
-.social-media .insLogo {
-  -webkit-animation-name: test;
-          animation-name: test;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
-}
-
 .social-media .insLogo:hover {
   background: #d6249f;
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
@@ -138,5 +131,94 @@ body {
 .social-media .twitchLogo:hover {
   background-color: #6441A4;
   cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  .title {
+    margin-top: 2rem;
+    height: 55vh;
+  }
+  .title .info-background {
+    width: 65%;
+  }
+  .social-media {
+    gap: 2rem;
+    padding-bottom: 3rem;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .social-media .insLogo {
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    cursor: pointer;
+  }
+  .social-media .gitLogo {
+    background: linear-gradient(269.65deg, #6e5494 0%, #000 17%, #000000 79%, #4078c0 99%);
+    cursor: pointer;
+  }
+  .social-media .tikLogo {
+    background: #69c9d0;
+    background: linear-gradient(139.03deg, #69c9d0 0%, #000 28%, #000 68%, #ee1d52 100%);
+    cursor: pointer;
+  }
+  .social-media .twitterLogo {
+    background-color: #00ACEE;
+    cursor: pointer;
+  }
+  .social-media .twitchLogo {
+    background-color: #6441A4;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .title {
+    min-height: 100vh;
+    margin-top: 2rem;
+  }
+  .title .info-background {
+    width: 75%;
+  }
+  .social-media {
+    gap: 2rem;
+    padding-bottom: 3rem;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .social-media .insLogo {
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    cursor: pointer;
+  }
+  .social-media .gitLogo {
+    background: linear-gradient(269.65deg, #6e5494 0%, #000 17%, #000000 79%, #4078c0 99%);
+    cursor: pointer;
+  }
+  .social-media .tikLogo {
+    background: #69c9d0;
+    background: linear-gradient(139.03deg, #69c9d0 0%, #000 28%, #000 68%, #ee1d52 100%);
+    cursor: pointer;
+  }
+  .social-media .twitterLogo {
+    background-color: #00ACEE;
+    cursor: pointer;
+  }
+  .social-media .twitchLogo {
+    background-color: #6441A4;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .title {
+    min-height: 140vh;
+  }
 }
 /*# sourceMappingURL=App.css.map */
